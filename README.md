@@ -97,9 +97,7 @@ irm https://raw.githubusercontent.com/Zuescho/glaz-buddy/main/tools/uninstall-po
 <summary>Manual registry value</summary>
 
 ```powershell
-$k = 'HKCU:\SOFTWARE\Policies\Microsoft\Edge\ExtensionInstallForcelist'
-if (-not (Test-Path $k)) { New-Item $k | Out-Null }
-New-ItemProperty $k -Name 1 -PropertyType String -Force -Value 'ijhbmofnkgedjfknliopndpofmeddonp;https://raw.githubusercontent.com/Zuescho/glaz-buddy-publish/main/updates.xml'
+reg add 'HKCU\SOFTWARE\Policies\Microsoft\Edge\ExtensionInstallForcelist' /v 1 /t REG_SZ /f /d 'ijhbmofnkgedjfknliopndpofmeddonp;https://raw.githubusercontent.com/Zuescho/glaz-buddy-publish/main/updates.xml'
 ```
 
 Use the next free number if a value named `1` already holds another extension.
