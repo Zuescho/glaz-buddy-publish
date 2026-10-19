@@ -1,8 +1,9 @@
 # install-policy.ps1 - install GLAZ-Buddy for the current Windows user through Edge's
 # ExtensionInstallForcelist policy (HKCU). No admin rights and no GPO needed.
 #
-#   pwsh tools\install-policy.ps1              # add / update the entry
-#   pwsh tools\install-policy.ps1 -Uninstall   # remove it again
+#   irm https://raw.githubusercontent.com/Zuescho/glaz-buddy-publish/main/install-policy.ps1 | iex
+#   pwsh tools\install-policy.ps1              # from a clone: add / update the entry
+#   pwsh tools\install-policy.ps1 -Uninstall   # and remove it again
 #
 # Restart Edge afterwards, then open edge://policy and press "Reload policies". Edge downloads the
 # signed CRX from the update URL and keeps it up to date on its own. A machine-wide policy (GPO or

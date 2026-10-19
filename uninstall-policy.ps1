@@ -1,6 +1,6 @@
 # uninstall-policy.ps1 - remove GLAZ-Buddy's per-user Edge policy entry again.
 #
-#   irm https://raw.githubusercontent.com/Zuescho/glaz-buddy/main/tools/uninstall-policy.ps1 | iex
+#   irm https://raw.githubusercontent.com/Zuescho/glaz-buddy-publish/main/uninstall-policy.ps1 | iex
 #   pwsh tools\uninstall-policy.ps1
 #
 # Restart Edge afterwards. Other extensions' entries in the same policy key are left untouched.
