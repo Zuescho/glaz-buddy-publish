@@ -15,8 +15,8 @@
 > (or taken from an open eVAYO tab) and only the same web APIs the eVAYO web app uses are called
 > with your own login.
 >
-> **This repository only distributes the signed build.** Source code, docs and tests:
-> [Zuescho/glaz-buddy](https://github.com/Zuescho/glaz-buddy) (GNU GPL v3).
+> **This repository only distributes the signed build.** The source code is kept private by the
+> author; the build itself is MIT-licensed (see [LICENSE](LICENSE)).
 
 ## What it does
 
@@ -143,6 +143,6 @@ here. That tool is an independent community project, not affiliated with X Corp 
 
 ## License
 
-GNU General Public License v3.0 - see [LICENSE](LICENSE) and the
-[source repository](https://github.com/Zuescho/glaz-buddy). Free software: you may redistribute it
-and/or modify it under the terms of the GPL, version 3. No warranty; use at your own risk.
+MIT License - see [LICENSE](LICENSE). Permission is granted to use, copy, modify and redistribute the
+build; the copyright and permission notice must accompany every copy. No warranty; use at your own
+risk.
