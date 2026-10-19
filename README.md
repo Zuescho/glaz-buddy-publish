@@ -108,11 +108,10 @@ Use the next free number if a value named `1` already holds another extension.
 A machine-wide policy (GPO or `HKLM`) wins over the per-user entry. If the folder was loaded unpacked
 before, remove that copy in `edge://extensions` first - one extension ID cannot be installed twice.
 
-### Without policy (development)
+### Without policy
 
-Clone [Zuescho/glaz-buddy](https://github.com/Zuescho/glaz-buddy), then
-`edge://extensions` → **Developer mode** → **Load unpacked** → the `extension` folder. Update with
-**Reload** (the popup also reloads itself when it notices a newer background part).
+Only the packed build is distributed here. For a development copy (unpacked folder) ask the author -
+it is not published.
 
 ## Updates
 
