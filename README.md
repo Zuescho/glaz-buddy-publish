@@ -53,6 +53,8 @@
 | `glaz-buddy.crx` | Signed, packed extension (created by `tools/pack.ps1` in the source repo) |
 | `updates.xml` | Update manifest Edge polls: app ID, CRX URL, version |
 | `extension-id.txt` | Extension ID as plain text |
+| `install-policy.ps1` | One-liner for a per-user install without admin rights (copied here by `pack.ps1`) |
+| `uninstall-policy.ps1` | Removes the per-user policy entry again |
 
 The private signing key is **not** here; it stays with the owner. It fixes the extension ID
 `ijhbmofnkgedjfknliopndpofmeddonp`.
@@ -81,7 +83,7 @@ the eVAYO address (or takes it from an open eVAYO tab).
 Edge reads the same policy from the current user's registry. Open PowerShell and run:
 
 ```powershell
-irm https://raw.githubusercontent.com/Zuescho/glaz-buddy/main/tools/install-policy.ps1 | iex
+irm https://raw.githubusercontent.com/Zuescho/glaz-buddy-publish/main/install-policy.ps1 | iex
 ```
 
 The script writes the value to `HKCU\SOFTWARE\Policies\Microsoft\Edge\ExtensionInstallForcelist`
@@ -90,7 +92,7 @@ open `edge://policy` and press **Reload policies**: GLAZ-Buddy installs itself f
 and updates by itself from then on. Remove it with
 
 ```powershell
-irm https://raw.githubusercontent.com/Zuescho/glaz-buddy/main/tools/uninstall-policy.ps1 | iex
+irm https://raw.githubusercontent.com/Zuescho/glaz-buddy-publish/main/uninstall-policy.ps1 | iex
 ```
 
 <details>
